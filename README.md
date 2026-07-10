@@ -1,4 +1,4 @@
-# AETHER VISION v5.0 – Real-Time People Counting & Occupancy Analytics
+# AETHER VISION v5.0 – Real-Time People Counting, Occupancy Analytics, and Dwell Time Monitoring
 
 ## Overview
 
@@ -10,17 +10,16 @@ The project is built using **YOLO**, **ByteTrack**, **OpenCV**, and **PyTorch**,
 
 ## Features
 
-* Real-time person detection using YOLO.
-* Multi-object tracking using ByteTrack.
-* Entry (IN) and Exit (OUT) counting.
-* Live occupancy calculation.
-* Configurable counting line position.
-* Polygon ROI visualization support.
-* Real-time FPS monitoring.
-* Automatic stream reconnection after connection loss.
-* Telemetry export for dashboard integration.
-* GPU acceleration with CUDA support.
-* CPU fallback when CUDA is unavailable.
+Persistent multi-object tracking.
+Entry / Exit counting.
+Real-time occupancy monitoring.
+Dwell Time calculation.
+Average customer time inside.
+Employee visualization support.
+Automatic stream recovery.
+Live telemetry export.
+GPU acceleration.
+Dynamic JSON configuration.
 
 ---
 
@@ -28,25 +27,26 @@ The project is built using **YOLO**, **ByteTrack**, **OpenCV**, and **PyTorch**,
 
 ```
 Video Stream
-      │
-      ▼
+        │
+        ▼
 YOLO Detection
-      │
-      ▼
+        │
+        ▼
 ByteTrack Tracking
-      │
-      ▼
-Counting Logic
-      │
-      ├── Entry Counter
-      ├── Exit Counter
-      └── Occupancy Calculation
-      │
-      ▼
-Telemetry Output
-      │
-      ▼
-Live Dashboard Display
+        │
+        ▼
+State Management
+        │
+        ├── IN
+        ├── OUT
+        ├── Dwell Time
+        └── Occupancy
+        │
+        ▼
+Telemetry
+        │
+        ▼
+Dashboard
 ```
 
 ---
@@ -99,11 +99,11 @@ Clone the repository:
 
 The application continuously displays:
 
-* IN Count
-* OUT Count
-* Current Occupancy
-* Active Detected People
-* Frames Per Second (FPS)
+IN
+OUT
+Current Occupancy
+Average Time Inside
+FPS
 
 ---
 
