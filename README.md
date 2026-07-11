@@ -44,9 +44,6 @@ State Management
         │
         ▼
 Telemetry
-        │
-        ▼
-Dashboard
 ```
 
 ---
