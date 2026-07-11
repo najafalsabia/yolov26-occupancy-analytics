@@ -2,7 +2,7 @@
 ### AI-Powered Real-Time Occupancy Analytics using YOLO and ByteTrack
 
 <p align="center">
-  <img src="demo.gif" alt="System Demo" width="900">
+  <img src="demo.gif" alt="System Demo">
 </p>
 
 ---
