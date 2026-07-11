@@ -41,9 +41,6 @@ State Management
         ├── OUT
         ├── Dwell Time
         └── Occupancy
-        │
-        ▼
-Telemetry
 ```
 
 ---
